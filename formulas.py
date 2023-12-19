@@ -11,6 +11,67 @@ def asktoexit():
 
 
 n1 = int(input('Яку операцію ви хочете виконати? \n 1 Алгебра \n 2 Геометрія \n 3 Фізика '))
+
+if n1 ==1:
+    g = int(input('1. Подивитися формули \n '))
+    if g == 1:
+        print('Какую формулу вы хотите ? \n 1 (a + b)**2 \n 2 (a - b)**2 \n 3 a**2 - b**2 \n 4 (a + b)*(a - b) \n 5 (a + b)**3 \n 6 (a - b)**3  \n 7 a**3 - b**3 \n  ' )
+        z = int(input('>>> '))
+
+        if z == 1:
+            a = input("Введіть значення a: ")
+            b = input("Введіть значення b: ")
+
+            if a.isdigit():
+                a = int(a)
+                print(f'{a ** 2} + {2 * a}{b} + {b}**2')
+                asktoexit()
+            if b.isdigit():
+                b = int(b)
+                print(f'{a}  2 + {2 * b}{a} + {b ** 2}')
+                asktoexit()
+        elif z == 2:
+            a = input("Введіть значення a: ")
+            b = input("Введіть значення b: ")
+
+            if a.isdigit():
+                a = int(a)
+                print(f'{a ** 2} - {2 * a}{b} + {b}**2')
+                asktoexit()
+            if b.isdigit():
+                b = int(b)
+                print(f'{a}  2 - {2 * b}{a} + {b **2}')
+                asktoexit()
+        elif z == 3:
+            a = input("Введіть значення a: ")
+            b = input("Введіть значення b: ")
+
+            if a.isdigit():
+                a = int(a)
+                print(f'({a} - {b}) * ({a} + {b})')
+                asktoexit()
+            if b.isdigit():
+                b = int(b)
+                print(f'({a} - {b}) * ({a} + {b})')
+                asktoexit()
+
+        if z == 8:
+            a = input("Введіть значення a: ")
+            b = input("Введіть значення b: ")
+
+            if a.isdigit():
+                a = int(a)
+                print(f'{a ** 2} + {2 * a}{b} + {b}**2 * ({a} + {b})')
+                asktoexit()
+            if b.isdigit():
+                b = int(b)
+                print(f'{a}  2 + {2 * b}{a} + {b **2} * ({a} + {b})')
+                asktoexit()
+
+        elif z == 9:
+
+              print(f'Результат: {a - 3 * a * b + b}')
+              asktoexit()
 if n1 == 3:
     g = int(input('1. Подивитися формули \n2. Зробити розрахунки по формулам \n'))
     if g == 1:
